@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import FormUserDetails from './FormUserDetails';
 
-class UserForm extends Component {
+export class UserForm extends Component {
     state = {
         step: 1,            // This will be used as our navigation to determine which step of the form we're on
         firstName: '',      // Our state will be an empty string
@@ -33,7 +33,6 @@ class UserForm extends Component {
         this.setState({[input]: e.target.value});   // Whatever input is, we set whatever value it is using the event handler
     }
 
-    
     render() {
         // Destructuring our state to use as independant variables
         const { step } = this.state;
@@ -49,7 +48,7 @@ class UserForm extends Component {
                         handleChange={this.handleChange}
                         values={values}
                     />
-                )
+                );
             case 2:
                 return (
                     <h1>FormPersonalDetails</h1>
