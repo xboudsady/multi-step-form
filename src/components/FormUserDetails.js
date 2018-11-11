@@ -41,7 +41,7 @@ export class FormUserDetails extends Component {
                         label="Conintue"
                         primary={true}                      // Makes it blue
                         style={styles.button}               // styles.button object is set below
-                        onClick={this.continue}             // This class method, which calls the method from UserForm.js component
+                        onClick={this.continue}             // This class method, which calls the method from UserForm.js component, which takes us to our next form component
                     />
                 </React.Fragment>
             </MuiThemeProvider>
